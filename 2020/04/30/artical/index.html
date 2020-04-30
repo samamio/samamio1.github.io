@@ -79,13 +79,15 @@
 
 
 
-<meta name="description" content="个人站，主要涉及产品知识共享、日常随想、前沿学习等方面">
-<meta property="og:type" content="website">
-<meta property="og:title" content="mio 写字的地方">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="按：做社区产品，内容推荐是一个绕不开的话题。传统论坛按版块分发内容的模式具有被动、低效等局限性，已不再适合如今快节奏的阅读模式，用户不再有大量的时间「沙里淘金」，因此基于内容的推荐模式被越来越多地应用到内容社区产品中。本文依据前人对内容推荐的研究，综合自身实践，简要讨论内容推荐的一些落地方式。  什么是内容推荐内容推荐是「基于内容本身的推荐」，即将内容进行分析后建立特征，然后依据这些特征给用户进行">
+<meta property="og:type" content="article">
+<meta property="og:title" content="artical">
+<meta property="og:url" content="http://yoursite.com/2020/04/30/artical/index.html">
 <meta property="og:site_name" content="mio 写字的地方">
-<meta property="og:description" content="个人站，主要涉及产品知识共享、日常随想、前沿学习等方面">
+<meta property="og:description" content="按：做社区产品，内容推荐是一个绕不开的话题。传统论坛按版块分发内容的模式具有被动、低效等局限性，已不再适合如今快节奏的阅读模式，用户不再有大量的时间「沙里淘金」，因此基于内容的推荐模式被越来越多地应用到内容社区产品中。本文依据前人对内容推荐的研究，综合自身实践，简要讨论内容推荐的一些落地方式。  什么是内容推荐内容推荐是「基于内容本身的推荐」，即将内容进行分析后建立特征，然后依据这些特征给用户进行">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-30T03:47:06.000Z">
+<meta property="article:modified_time" content="2020-04-30T03:47:29.527Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -117,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/04/30/artical/"/>
 
 
 
 
 
-  <title>mio 写字的地方</title>
+  <title>artical | mio 写字的地方</title>
   
 
 
@@ -142,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -216,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -248,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/04/30/artical/" itemprop="url">artical</a></h1>
+          <h1 class="post-title" itemprop="name headline">artical</h1>
         
 
         <div class="post-meta">
@@ -300,9 +299,7 @@
       
 
       
-        
-          
-            <p>按：做社区产品，内容推荐是一个绕不开的话题。传统论坛按版块分发内容的模式具有被动、低效等局限性，已不再适合如今快节奏的阅读模式，用户不再有大量的时间「沙里淘金」，因此基于内容的推荐模式被越来越多地应用到内容社区产品中。本文依据前人对内容推荐的研究，综合自身实践，简要讨论内容推荐的一些落地方式。</p>
+        <p>按：做社区产品，内容推荐是一个绕不开的话题。传统论坛按版块分发内容的模式具有被动、低效等局限性，已不再适合如今快节奏的阅读模式，用户不再有大量的时间「沙里淘金」，因此基于内容的推荐模式被越来越多地应用到内容社区产品中。本文依据前人对内容推荐的研究，综合自身实践，简要讨论内容推荐的一些落地方式。</p>
 <hr>
 <h3 id="什么是内容推荐"><a href="#什么是内容推荐" class="headerlink" title="什么是内容推荐"></a><strong>什么是内容推荐</strong></h3><p>内容推荐是「基于内容本身的推荐」，即将内容进行分析后建立特征，然后依据这些特征给用户进行推荐，这种特征往往用「标签」来定义。标签在整个内容推荐体系中具有很重要的作用。那么如何进行标签的制定，即所谓「打标签」呢？</p>
 <h4 id="内容标签"><a href="#内容标签" class="headerlink" title="内容标签"></a><strong>内容标签</strong></h4><p><strong>1. 用户自行打标签</strong><br>用户自行打标签有两种方式：一是用户在平台预设标签下生产的内容会自动打上对应标签，二是平台允许用户自行添加一些标签。后一种方式可能由于用户对内容把握不足，或恶意操作，导致大量冗余标签或噪音标签产生，不利于后期维护。<br><strong>2. 机器自动打标签</strong><br>使用机器进行打标签，有一定的开发成本。一般可以结合分词技术和 TF-IDF 来提取关键词作为标签。这里需要注意的一点是，这种打标签的方式对文本的依赖度较高，如果社区内容为音频、视频等多媒体内容，这种方式仅能作用于内容的标题，因此可能会受一些「标题党」的干扰，但总体打标签效率比较高。<br><strong>3. 运营人工打标签</strong><br>运营人工打标签是一种最笨，但也是最有效的方法。通过运营人工干预，可以对内容标签进行复核，使标签和内容匹配度更高；同时通过运营介入，可以人工设置关联标签，将关联标签进行聚类处理。</p>
@@ -330,8 +327,6 @@
 <p><strong>2. 内容排序</strong><br>受顺序效应影响，在推荐时应注意推荐内容的排序，和用户最相关、质量最高的内容应排在顶部。通常在有用户信息的情况下，可以将推荐出的内容按和用户相关度进行排序；若没有用户信息时，则可单独依据内容本身的质量进行排序。</p>
 <p><strong>3. 长尾内容</strong><br>平台里一般都会存在一些长尾内容，这部分如果不进行推荐，则很难触达用户。针对长尾内容，可以在一定维度进行统一提取后，当做新内容重新进行推荐，但需注意时效性内容不适合使用此方法。</p>
 
-          
-        
       
     </div>
     
@@ -348,136 +343,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/21/%E4%B9%9F%E8%B0%88%E7%94%A8%E6%88%B7%E6%A0%87%E7%AD%BE%E5%8C%96/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="mio 写字的地方">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/04/21/%E4%B9%9F%E8%B0%88%E7%94%A8%E6%88%B7%E6%A0%87%E7%AD%BE%E5%8C%96/" itemprop="url">也谈用户标签化</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-21T11:16:22+08:00">
-                2020-04-21
-              </time>
+              <a href="/2020/04/21/%E4%B9%9F%E8%B0%88%E7%94%A8%E6%88%B7%E6%A0%87%E7%AD%BE%E5%8C%96/" rel="next" title="也谈用户标签化">
+                <i class="fa fa-chevron-left"></i> 也谈用户标签化
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>朋友有一次微信告诉我，某电商平台上有优惠券可以领取。当我兴冲冲打开 App 后发现，同样的一张优惠券，他可以领取而我却看都看不到。</p>
-<p>我猜，我可能遇上了传说中的「老用户与狗不得参与」了。</p>
-<p>上面的现象可能不仅仅是我遇到过。「大数据杀熟」已经成为了 2018 年度社会生活十大流行语之一，由此衍生出诸如「老用户与狗不得参与」、「苹果用户比安卓用户收费高」、「卖给老用户比新用户更贵」等一系列令人匪夷所思的现象。平台收集标签，并依赖标签给用户推荐不同的商品，提供不同的服务，甚至是给予不同的定价，也就是上面提到的「大数据杀熟」的一部分了。<br>&lt;!–more–&gt;<br>标签化并不是互联网出现后的新兴产物。每个社会人都有多重身份，这些身份的具象反映即是标签。比如如今甚嚣尘上的「人设崩塌」，也是一种标签化的人格展示。大多数人在社交网络中会给自己贴上想要的标签，不一定真实，但却是希望别人能够感知并认同的。通过标签树立人设，我们便能找到具有相似标签的「同类」，或是发现具有相悖标签的「异族」。前者能给予我们归属感，发现人际关系中的温暖面；而后者正是矛盾和冲突产生的根源。这是自我的标签化，互联网只是将这种标签化拉近，并且放大。</p>
-<p>除了自我的标签展示，与之相对应的，将他人贴上标签可能也是我们与生俱来的能力。社会的碎片化迫使我们不得不以最快的效率去输入并消化信息，标签定义这种「降维处理」或许是最便利的方式。我们不再有时间与对方慢慢磨合了解，而是粗放式地根据标签建立认知。但随之而来的问题是，由标签建立的认知，很可能是不全面的。我们总是希望能用最简单的标签来定义一个人，而忽略了人性的错综复杂。这带来的，便是个体标签归属 —— 或者说，身份 —— 的单一性。小到家庭矛盾，大到种族冲突，都是这种单一性带来的后果。《身份与暴力》中提到，把个体身份单一化，利用这种单一化推动暴力和冲突的行为，是不理智的。比如极端民族主义和地域歧视，便是单纯以血缘和地理标签将个体进行粗暴划分后所带来的冲突。这种粗糙的身份标签单一化带来的便是偏见和暴力。</p>
-<p>标签让我们更加方便地认知他人，认知世界。标签化本身没有问题，关键是如何建立对标签化的正确认知。过度富集并依赖标签，和个体标签单一化，都是对标签的错误利用。长此以往便会发现，社会看上去日益琐碎复杂，但自己却逐渐变得狭隘单一</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -487,10 +374,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -498,6 +386,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -518,8 +410,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -561,6 +462,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是内容推荐"><span class="nav-number">1.</span> <span class="nav-text">什么是内容推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#内容标签"><span class="nav-number">1.1.</span> <span class="nav-text">内容标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#用户标签"><span class="nav-number">1.2.</span> <span class="nav-text">用户标签</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -694,6 +611,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
